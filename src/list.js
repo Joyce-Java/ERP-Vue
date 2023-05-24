@@ -7,15 +7,15 @@ import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios';
 import qs from 'qs';
 import jwt_decode from 'jwt-decode';
-// import VueSocketIO from 'vue-socket.io'
 
-// Vue.prototype.vueSocketIO = VueSocketIO
+
+
 Vue.prototype.jwt_decode = jwt_decode;
 Vue.prototype.qs = qs;
 Vue.prototype.axios = axios;
 Vue.use(ElementUI);
 Vue.config.productionTip = false
-Vue.prototype.baseUrl = "localhost";
+
 new Vue({
     router,
     store,
